@@ -8,51 +8,66 @@ function Menu() {
     
     <div className="menu">
         <div className="menu-item">
-            <div className="menu-item-name">
-            <div className="menu-item-image">
-                                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="food" />
-                            </div>
-                <h3>Pepperoni Pizza</h3>
+                <div className="menu-item-left">
+                    
+                        <div className="menu-item-name">
+                            <h3>Ceviche</h3>
+                        
+                
+                    </div>
+                    <div className="menu-item-description">
+                        <p className="description">raw fish cured in fresh lime citrus juices. Spiced with ají, chili peppers</p>
+                    </div>
+                     <div className="menu-item-price">
+                        <p className="price">$9.99</p>
+                   </div>
                 </div>
-                <div className="menu-item-description">
-                                        <p className="description">Pepperoni, mushrooms, green peppers, and onions</p>
-                                        </div>
-                                        <div className="menu-item-price">
-                                    <p className="price">$9.99</p>
-                                    </div>
+                <div className="nenu-item-right">
+                
+                                <img className='menu-item-image' src="https://z.cdrst.com/foto/hotel-sf/a3922/granderesp/foto-hotel-d6a3427.jpg" alt="food" />
                 </div>
-                <div className="menu-item">
-                    <div className="menu-item-name">
-                    <div className="menu-item-image">
-                                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="food" />
-                            </div>
-                        <h3>Cheese Pizza</h3>
-                        </div>
-                        <div className="menu-item-description">
-                                        <p className="description">Pepperoni, mushrooms, green peppers, and onions</p>
-                                        </div>
-                                        <div className="menu-item-price">
-                                    <p className="price">$9.99</p>
-                                    </div>
-                        </div>
-                        <div className="menu-item">
-                            <div className="menu-item-image">
-                                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="food" />
-                            </div>
-                            <div className="menu-item-name">
-                                <h3>Veggie Pizza</h3>
-                                </div>
-                                
-                                    <div className="menu-item-description">
-                                        <p className="description">Pepperoni, mushrooms, green peppers, and onions</p>
-                                        </div>
-                                        <div className="menu-item-price">
-                                    <p className="price">$9.99</p>
-                                    </div>
-                                        </div>
-                                        </div>
-
-
+        </div>
+        <div className="menu-item">
+                <div className="menu-item-left">
+                    
+                        <div className="menu-item-name">
+                            <h3>Ceviche</h3>
+                        
+                
+                    </div>
+                    <div className="menu-item-description">
+                        <p className="description">raw fish cured in fresh lime citrus juices. Spiced with ají, chili peppers</p>
+                    </div>
+                     <div className="menu-item-price">
+                        <p className="price">$9.99</p>
+                   </div>
+                </div>
+                <div className="nenu-item-right">
+                
+                                <img className='menu-item-image' src="https://z.cdrst.com/foto/hotel-sf/a3922/granderesp/foto-hotel-d6a3427.jpg" alt="food" />
+                </div>
+        </div>
+        <div className="menu-item">
+                <div className="menu-item-left">
+                    
+                        <div className="menu-item-name">
+                            <h3>Ceviche</h3>
+                        
+                
+                    </div>
+                    <div className="menu-item-description">
+                        <p className="description">raw fish cured in fresh lime citrus juices. Spiced with ají, chili peppers</p>
+                    </div>
+                     <div className="menu-item-price">
+                        <p className="price">$9.99</p>
+                   </div>
+                </div>
+                <div className="menu-item-right">
+                
+                                <img className='menu-item-image' src="https://z.cdrst.com/foto/hotel-sf/a3922/granderesp/foto-hotel-d6a3427.jpg" alt="food" />
+                </div>
+        </div>
+        </div>
 
     </div>
   )

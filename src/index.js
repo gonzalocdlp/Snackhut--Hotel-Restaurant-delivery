@@ -1,13 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import NavbarC from './NavbarC';
+import Hero from './Hero';
+import Menu from './Menu';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <NavbarC/>
+    <Hero/>
     <App />
+    <Menu/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,46 @@
+div{
+    display: unset;
+}
+ 
+.menu{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    flex: 0 0 33.333333%;
+    flex-basis: 33.333333%;
+}  
+.menu-item:hover{
+    background-color: #f5f5f5;
+}  
+.menu-item-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.menu-item-price{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.menu-item-description{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.menu-item-image{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+

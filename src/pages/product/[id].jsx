@@ -1,5 +1,5 @@
 import styles from '../../styles/Product.module.css';
-var quantity=1;
+let quantity=1;
 
 const Product = () => {
       const food={
@@ -14,6 +14,14 @@ const Product = () => {
         
 
       };
+  let price=food.price;
+function addQuantity(x){
+  var foodvalue=parseInt(food.price);
+  var price=x*foodvalue;
+  console.log (price);
+  
+}
+
       return  (
       <div className={styles.menuItem}>
               
@@ -30,7 +38,7 @@ const Product = () => {
                         <p>{food.desc}</p>
                     </div>
                     <div className={styles.menuPrice}>
-                    <p className={styles.price}>{parseInt(food.price)*quantity}</p>
+                    <p className={styles.price}>{price}</p>
                    </div>
                 
                 
@@ -38,7 +46,8 @@ const Product = () => {
                 
               
                 <div className={styles.add}>
-            <input id={quantity} type="number" defaultValue={1} className={styles.quantity}/>
+            <input onClick={addQuantity(quantity.valueOf)} type="number" defaultValue={1} className={styles.quantity}/>
+            <p className={styles.price}>{price}</p>
             <button className={styles.button}>Add to Cart</button>
         </div>
         </div>

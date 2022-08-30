@@ -1,5 +1,4 @@
-import React from 'react'
-import { Button, Nav, Navbar, NavDropdown, Dropdown, NavItem, } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 function NavbarC() {
 //   simple black navbar with home about and order

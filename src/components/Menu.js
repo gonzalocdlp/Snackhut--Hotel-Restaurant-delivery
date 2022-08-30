@@ -11,7 +11,7 @@ const Menu = ({ food }) => {
                 <div className={styles.menuLeft}>
                     
                         <div className={styles.menuName}>
-                            <h3>Ceviche</h3>
+                            <h3 className={styles.title}>Ceviche</h3>
                         
                 
                     </div>

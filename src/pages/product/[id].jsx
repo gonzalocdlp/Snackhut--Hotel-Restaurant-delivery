@@ -1,13 +1,14 @@
 import styles from '../../styles/Product.module.css';
+import Link from 'next/link';
 let quantity=1;
 
 const Product = () => {
       const food={
         id: 1,
-        image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-        name: 'Pizza',
+        image: 'https://z.cdrst.com/foto/hotel-sf/a3922/granderesp/foto-hotel-d6a3427.jpg',
+        name: 'Ceviche',
         price: '10.00',
-        desc: 'Pizza',
+        desc: 'Fish marinated with lime and aji',
         
         ingredients: 'Pizza',
         category: 'Pizza',
@@ -46,9 +47,15 @@ function addQuantity(x){
                 
               
                 <div className={styles.add}>
-            <input onClick={addQuantity(quantity.valueOf)} type="number" defaultValue={1} className={styles.quantity}/>
+                {/* onClick={addQuantity(quantity.valueOf)} */}
+            <input  type="number" defaultValue={1} className={styles.quantity}/>
             <p className={styles.price}>{price}</p>
+            <Link href="/">
+            <button Link href={`/`} className={styles.button}>go back to menu</button>
+            </Link>
+            <Link href="/cart">
             <button className={styles.button}>Add to Cart</button>
+            </Link>
         </div>
         </div>
       );

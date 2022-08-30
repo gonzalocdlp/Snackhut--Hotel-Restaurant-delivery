@@ -1,0 +1,39 @@
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+.left{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.imgContainer{
+    width:40%;
+    padding:0;
+    margin:0;
+}
+.tr{
+    
+    width:110px;
+}
+.th{
+    
+    width:110px;
+}
+.right{
+    width:60%;
+    padding:0;
+    margin:0;
+    justify-content: center;
+    align-items: center;
+
+}

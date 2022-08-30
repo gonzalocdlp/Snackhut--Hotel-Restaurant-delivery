@@ -29,3 +29,9 @@
     letter-spacing: 1px;
     padding: 1rem;
 }
+@media (max-width: 768px){
+    
+.heroImage{
+    display:none;
+}
+}

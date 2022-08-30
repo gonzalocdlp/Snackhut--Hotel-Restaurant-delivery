@@ -3,7 +3,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 function NavbarC() {
 //   simple black navbar with home about and order
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="light" variant="light" expand="lg">
             <Navbar.Brand href="#home">Snack Hut</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

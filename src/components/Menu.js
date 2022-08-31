@@ -6,20 +6,20 @@ const Menu = ({ food }) => {
     <div>
     
     <div className={styles.menu}>
-    <Link href={`/product/131}`} passHref>
+    <Link href={`/product/${food._id}`} passHref>
         <div className={styles.menuItem}>
                 <div className={styles.menuLeft}>
                     
                         <div className={styles.menuName}>
-                            <h3 className={styles.title}>Ceviche</h3>
+                            <h3 className={styles.title}>{food.title}</h3>
                         
                 
                     </div>
                     <div className={styles.description}>
-                        <p className={styles.text}>raw fish cured in fresh lime citrus juices. Spiced with ají, chili peppers</p>
+                        <p className={styles.text}>{food.description}</p>
                     </div>
                      <div className={styles.menuPrice}>
-                        <p className={styles.price}>$9.99</p>
+                        <p className={styles.price}>{food.price}</p>
                    </div>
                 </div>
                 <div className={styles.menuRight}>

@@ -1,25 +1,22 @@
 import styles from '../../styles/Product.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
+import axios from 'axios';
 let quantity=1;
 
-const Product = () => {
+const Product = ({food}) => {
       const food={
-        id: 1,
-        image: 'https://z.cdrst.com/foto/hotel-sf/a3922/granderesp/foto-hotel-d6a3427.jpg',
-        name: 'Ceviche',
-        price: '10.00',
-        desc: 'Fish marinated with lime and aji',
+        // id: 1,
+        // image: 'https://z.cdrst.com/foto/hotel-sf/a3922/granderesp/foto-hotel-d6a3427.jpg',
+        // name: 'Ceviche',
+        // price: '10.00',
+        // desc: 'Fish marinated with lime and aji',
         
-        ingredients: 'Pizza',
-        category: 'Pizza',
+        // ingredients: 'Pizza',
+        // category: 'Pizza',
         
 
       };
-  let price=food.price;
-function addQuantity(x){
-  var foodvalue=parseInt(food.price);
-  var price=x*foodvalue;
-  console.log (price);
   
 }
 
@@ -61,6 +58,15 @@ function addQuantity(x){
       );
    
   
+};
+
+export const getServerSideProps = async ({params}) => {
+  const res= await axios.get(`http://localhost:3000/api/products/${params.id}`);
+  return{
+    props: {
+      food: res.data,
+  },
+};
 };
 
 export default Product
